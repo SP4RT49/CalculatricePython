@@ -41,7 +41,7 @@ def main():
         print("Voulez-vous effectuer une autre opération ? 'yes' ou 'no'")
         user_input = input("> ")
 
-        if user_input == "yes":
+        if user_input == "no":
             break
 
 main()
