@@ -26,8 +26,19 @@ def main():
             print("Option non valide!")
             continue
 
-        num1 = float(input("Entrez le premier nombre: "))
-        num2 = float(input("Entrez le deuxième nombre: "))
+        try:
+            num1 = input("Entrez le premier nombre: ")
+            num2 = input("Entrez le deuxième nombre: ")
+            if not num1.isnumeric():
+                raise ValueError("Le premier nombre n'est pas une valeur numérique")
+            elif not num2.isnumeric():
+                raise ValueError("Le deuxième nombre n'est pas une valeur numérique")
+            else:
+                num1 = float(num1)
+                num2 = float(num2)
+        except ValueError as e:
+            print(e)
+            break;
 
         if user_input == "add" or user_input == "+":
             print("Le résultat de l'addtion est", addition(num1, num2))
