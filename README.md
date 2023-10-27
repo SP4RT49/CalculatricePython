@@ -88,7 +88,7 @@ Voici quelques points clés concernant les branches Git :
 
 Les branches Git offrent une grande flexibilité dans la gestion de versions et la collaboration sur des projets, car elles permettent aux développeurs de travailler de manière parallèle tout en maintenant un historique clair et organisé des modifications. Cela rend également plus facile la gestion de correctifs, le développement de nouvelles fonctionnalités et la gestion de versions stables de votre logiciel.
 
-## Type de licence
+# Type de licence
 ## Licence MIT
 
 **La licence MIT est une licence de logiciel libre qui accorde des droits considérables aux utilisateurs du code source. Voici les caractéristiques clés de cette licence :**
@@ -100,3 +100,55 @@ Les branches Git offrent une grande flexibilité dans la gestion de versions et 
 **Clause de droits d'auteur :** Les utilisateurs doivent conserver l'avis de droits d'auteur dans les copies du code.
 
 **Clause de licence :** Les utilisateurs doivent inclure une copie complète de la licence MIT dans leurs distributions.
+
+# Résumé des différentes étapes pour créer et utiliser un dépôt GitHub
+
+## 1. Créer un compte GitHub
+
+- Inscrivez-vous sur [github.com](https://github.com/).
+- Fournissez un nom d'utilisateur, une adresse e-mail, et un mot de passe.
+
+## 2. Créer un Nouveau Dépôt
+
+- Cliquez sur "Your repositories" depuis votre profil.
+- Sélectionnez "New" pour créer un nouveau dépôt.
+- Nommez votre dépôt, ajoutez une description, et choisissez sa visibilité.
+- Optionnel : initialisez avec un fichier README, .gitignore, ou choisissez une licence.
+- Cliquez sur "Create repository".
+
+## 3. Cloner le Dépôt
+
+- Copiez l'URL du dépôt depuis GitHub.
+- Ouvrez un terminal et exécutez `git clone [URL]`.
+
+## 4. Faire des Modifications Locales
+
+- Naviguez dans le dossier du dépôt cloné.
+- Créez ou modifiez des fichiers.
+- Utilisez `git add [fichier]` et `git commit -m "message de commit"` pour enregistrer vos changements.
+
+## 5. Pousser les Modifications sur GitHub
+
+- Exécutez `git push origin main` pour envoyer vos modifications.
+
+## 6. Gestion des Branches
+
+- Créez des branches avec `git branch [nom_de_la_branche]`.
+- Basculer entre les branches avec `git checkout [nom_de_la_branche]`.
+
+## 7. Pull Requests et Fusion (Merge)
+
+- Créez ou modifiez des fichiers.
+- Utilisez `git add [fichier]` et `git commit -m "message de commit"` pour enregistrer vos changements.
+- Exécutez `git push origin [nom_de_la_branche]` pour envoyer vos modifications.
+- Créez une "Pull Request" sur GitHub sur la branche `main` pour proposer vos changements.
+- Les mainteneurs peuvent examiner, discuter, et fusionner vos modifications.
+
+## 8. Récupérer les Dernières Modifications
+
+- Retourner sur main `git checkout main`
+- Utilisez `git pull` pour récupérer et fusionner les modifications depuis GitHub.
+
+## Conclusion
+
+GitHub est essentiel pour la gestion de version et la collaboration dans des projets de programmation.
